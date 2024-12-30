@@ -30,7 +30,7 @@
 
 - clasp project clone, move files
     ```bash
-    clasp clone <script_id>
+    clasp clone "<script_url>" # clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"
     clasp pull
     mv *.js ./src
     ```
