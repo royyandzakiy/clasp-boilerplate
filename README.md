@@ -45,13 +45,13 @@
     - open the apps-script project URL
 
 
-- clasp project clone (will autogenerate `.clash.json`), move files
+- clasp project clone (will autogenerate `.clash.json`)
     ```bash
     clasp clone # or clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"
     ```
 
 ### Code on!
-- pull files
+- pull files, move files
     ```bash
     clasp pull
     mv *.js ./src
@@ -62,8 +62,8 @@
     npm push # git push && clasp push
     ```
 
-- after this, your Apps-Script foldering will adopt using the `./src`
-- run the code in the Apps-Script console
+- after this, your Apps-Script project foldering will adopt using the `./src`
+- run the code in the Apps-Script console (refresh page!)
 
 ---
 
