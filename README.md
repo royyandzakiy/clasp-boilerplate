@@ -1,6 +1,7 @@
 # clasp-boilerplate
 
-[clasp-spreadsheet-example](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit?gid=0#gid=0)
+[clasp-spreadsheet-example - spreadsheet](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit)
+[clasp-spreadsheet-example - app script](https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit)
 
 ### Motivation
 \<TBD\>

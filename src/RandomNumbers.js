@@ -1,6 +1,6 @@
 function generateRandomNumbers() {
   // Get the active sheet
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var sheet = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit").getSheets()[0];
   
   // Clear the sheet before running the script
   sheet.clear();
