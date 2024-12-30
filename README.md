@@ -1,7 +1,7 @@
 # clasp-boilerplate
 
-[clasp-spreadsheet-example - spreadsheet](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit)
-[clasp-spreadsheet-example - app script](https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit)
+- [clasp-spreadsheet-example - spreadsheet](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit)
+- [clasp-spreadsheet-example - app script](https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit)
 
 ### Motivation
 \<TBD\>
@@ -28,16 +28,29 @@
     clasp login
     ```
 
+- add google app-script autocomplete
+    ```bash
+    npm i -S @types/google-apps-script
+    ```
+
+    - alternative: to write in [typescript, refer to this doc guide](https://github.com/google/clasp/blob/master/docs/typescript.md)
+
+- create a project in app-script
+    - open `https://script.google.com/home` then create "New Project"
+    - open the apps-script project URL
+
+    - alternative: change `.clasp.json.change_this` with your \<script ID\>
+
 - clasp project clone, move files
     ```bash
-    clasp clone "<script_url>" # clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"
+    clasp clone # or clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"
     clasp pull
     mv *.js ./src
     ```
 
 - do edits, then push
     ```bash
-    npm push
+    npm push # git push && clasp push
     ```
 
 - run the code in the Apps-Script console
