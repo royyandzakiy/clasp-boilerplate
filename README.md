@@ -29,8 +29,8 @@
     ```
 
 ### Inject already created Apps-Script project
-- change `.clasp.json.change_this` with your \<script ID\>
-    ```json
+- change `.clasp.json.change_this` with your \<script ID\>, change filename to `.clasp.json`
+    ```
     {
         ...
         "scriptId": "your_project_script_id",
