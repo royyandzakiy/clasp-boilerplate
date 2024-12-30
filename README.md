@@ -45,7 +45,7 @@
     - open the apps-script project URL
 
 
-- clasp project clone, move files
+- clasp project clone (will autogenerate `.clash.json`), move files
     ```bash
     clasp clone # or clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"
     ```
