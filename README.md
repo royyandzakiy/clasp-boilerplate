@@ -39,7 +39,7 @@
     }
     ```
 
-### Create new Apps-Script project
+#### alternative: Create new Apps-Script project
 - create a project in app-script
     - open `https://script.google.com/home` then create "New Project"
     - open the apps-script project URL
