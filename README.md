@@ -67,7 +67,7 @@
 
 ---
 
-## How to Recreate
+## How to Recreate this Boilerplate
 ### Init Project
 - init empty npm project
     ```bash
@@ -104,17 +104,11 @@
 
     - alternative: to write in [typescript, refer to this doc guide](https://github.com/google/clasp/blob/master/docs/typescript.md)
 
-- clone project
-    ```bash
-    clasp clone <script_id>
-    clasp pull
-    mv *.js ./src
-    ```
+- (refer to "alternative: Create new Apps-Script project")
 
-- move all clasp project files into `./src`
 - create `.claspignore` (copy everything from this [.claspignore](./.claspignore))
 
-### Setup GIT
+### Setup Git
 - setup git repo
     ```bash
     git init
@@ -129,15 +123,16 @@
     npm i -D vitest
     ```
 
-- modify `package.json`, add test
+- modify `package.json`, add `test`
     ```bash
     // package.json
     ...
-    "test": "vitest"
+    "test": "vitest",
+    "push": "git push && clasp push",
     ...
     ```
 
-- install gas-local
+- install gas-local to mock apps script libraries
     ```bash
     npm install gas-local --save
     ```
