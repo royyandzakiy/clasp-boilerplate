@@ -17,27 +17,27 @@
     `npm install -g @google/clasp`
 
 - git clone, cd
-
-    ```
+    ```bash
     git clone https://github.com/royyandzakiy/clasp-spreadsheet-boilerplate.git
     cd clasp-spreadsheet-boilerplate
     ```
 
 - clasp login & activate app-sciprt API in settings
-
-    `clasp login`
+    ```bash
+    clasp login
+    ```
 
 - clasp project clone, move files
-
-    ```
+    ```bash
     clasp clone <script_id>
     clasp pull
     mv *.js ./src
     ```
 
 - do edits, then push
-
-    `npm push`
+    ```bash
+    npm push
+    ```
 
 - run the code in the Apps-Script console
 
@@ -46,16 +46,17 @@
 ## How to Recreate
 ### Init Project
 - init empty npm project
-
-    `npm init`
+    ```bash
+    npm init
+    ```
 
 - alternative:
     - init vite project (decide `js` or `ts`)
-
-        `npm init vite`
+        ```bash
+        npm init vite
+        ```
 
     - delete unnecessary vite default files
-
         ```
         public/
         src/
@@ -73,16 +74,17 @@
     - open the project > Project Settings > copy script ID
 
 - add google app-script autocomplete
-
-    `npm i -S @types/google-apps-script`
+    ```bash
+    npm i -S @types/google-apps-script
+    ```
 
     - alternative: to write in [typescript, refer to this doc guide](https://github.com/google/clasp/blob/master/docs/typescript.md)
 
 - clone project
-
-    ```
-    clasp clone "script_ID"
+    ```bash
+    clasp clone <script_id>
     clasp pull
+    mv *.js ./src
     ```
 
 - move all clasp project files into `./src`
@@ -90,7 +92,7 @@
 
 ### Setup GIT
 - setup git repo
-    ```
+    ```bash
     git init
     git remote add origin "github_repository_url"
     ```
@@ -99,12 +101,12 @@
 
 ### Testing Suite
 - install vitest
-
-    `npm i -D vitest`
+    ```bash
+    npm i -D vitest
+    ```
 
 - modify `package.json`, add test
-    
-    ```
+    ```bash
     // package.json
     ...
     "test": "vitest"
@@ -112,13 +114,13 @@
     ```
 
 - install gas-local
-
-    `npm install gas-local --save`
+    ```bash
+    npm install gas-local --save
+    ```
 
 - create test suites in `./test`
     - format the filenames as `Class.test.js`
 
 ---
-
 
 Powered by App Script

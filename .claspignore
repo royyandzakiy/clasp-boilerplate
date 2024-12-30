@@ -16,5 +16,6 @@
 # ignore these default files
 .gitignore
 package.json
+README.md
 
 # ignore these temporary files
