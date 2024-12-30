@@ -3,10 +3,10 @@
 [clasp-spreadsheet-example](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit?gid=0#gid=0)
 
 ### Motivation
-<TBD>
+\<TBD\>
 
 ### How it Works
-<TBD>
+\<TBD\>
 
 ---
 
@@ -37,7 +37,7 @@
 
 - do edits, then push
 
-    `clasp push`
+    `npm push`
 
 - run the code in the Apps-Script console
 
