@@ -1,0 +1,6 @@
+{
+    "scriptId": "your_project_script_id",
+    "rootDir": "D:\\your\\clasp\\folder\\location",
+    "fileExtension": "js",
+    "filePushOrder": []
+}

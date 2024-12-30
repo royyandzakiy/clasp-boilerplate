@@ -1,0 +1,20 @@
+# for details on .claspignore, check https://github.com/google/clasp?tab=readme-ov-file#ignore-file-claspignore
+
+# ignore all files
+# **/**
+
+# exception to these
+!appsscript.json
+!*.js
+!*.ts
+
+# ignore these folders
+**/.git/**
+**/node_modules/**
+**/test/**
+
+# ignore these default files
+.gitignore
+package.json
+
+# ignore these temporary files
