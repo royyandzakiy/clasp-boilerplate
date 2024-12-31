@@ -12,24 +12,25 @@
 ---
 
 ## How to Use
-- install npm & git
-- install clasp
+1. install npm & git
+2. install clasp
 
     `npm install -g @google/clasp`
 
-- git clone, cd
+3. git clone, cd
     ```bash
     git clone https://github.com/royyandzakiy/clasp-spreadsheet-boilerplate.git
     cd clasp-spreadsheet-boilerplate
+    npm install
     ```
 
-- clasp login & activate app-sciprt API in settings
+4. clasp login & activate app-sciprt API in settings
     ```bash
     clasp login
     ```
 
 ### Inject already created Apps-Script project
-- change `.clasp.json.change_this` with your \<script ID\>, change filename to `.clasp.json`
+5. change `.clasp.json.change_this` with your \<script ID\>, change filename to `.clasp.json`
     ```
     {
         ...
@@ -40,30 +41,28 @@
     ```
 
 #### alternative: Create new Apps-Script project
-- create a project in app-script
+5. (alt) create a project in app-script
     - open `https://script.google.com/home` then create "New Project"
     - open the apps-script project URL
-
-
-- clasp project clone (will autogenerate `.clash.json`)
+    - clasp project clone (will autogenerate `.clash.json`)
     ```bash
-    clasp clone # or clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"
+    clasp clone "appscript_url" # or clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"
     ```
 
 ### Code on!
-- pull files, move files
+6. pull files, move files
     ```bash
     clasp pull
     mv *.js ./src
     ```
 
-- do edits, then push
+7. do edits, then push
     ```bash
     npm push # git push && clasp push
     ```
 
-- after this, your Apps-Script project foldering will adopt using the `./src`
-- run the code in the Apps-Script console (refresh page!)
+8. after this, your Apps-Script project foldering will adopt using the `./src`
+9. run the code in the Apps-Script console (refresh page!)
 
 ---
 
