@@ -24,17 +24,17 @@
     npm install
     ```
 
-4. clasp login & activate app-sciprt API in settings
+4. clasp login & activate app-script API in settings
     ```bash
     clasp login
     ```
 
 ### Inject already created Apps-Script project
-5. change `.clasp.json.change_this` with your \<script ID\>, change filename to `.clasp.json`
+5. change `.clasp.json.change_this` filename to `.clasp.json`, fill in `scriptId` from your app scripts script ID `https://script.google.com/u/1/home/projects/<this_is_the_script_id>`
     ```
     {
         ...
-        "scriptId": "your_project_script_id",
+        "scriptId": "your_projects_script_id",
         "rootDir": "D:\\your\\clasp\\project\\folder\\location",
         ...
     }
