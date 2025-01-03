@@ -4,10 +4,16 @@
 - [clasp-spreadsheet-example - app script](https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit)
 
 ### Motivation
-\<TBD\>
+<TBD\>
 
 ### How it Works
-\<TBD\>
+<TBD\>
+
+### Pending Bug Fixes 🪲
+<TBD\>
+
+### Future Developments 🌱
+<TBD\>
 
 ---
 
@@ -31,12 +37,10 @@
 
 ### Inject already created Apps-Script project
 5. change `.clasp.json.change_this` filename to `.clasp.json`, fill in `scriptId` from your app scripts script ID `https://script.google.com/u/1/home/projects/<this_is_the_script_id>`
-    ```
+    ```json
     {
-        ...
-        "scriptId": "your_projects_script_id",
-        "rootDir": "D:\\your\\clasp\\project\\folder\\location",
-        ...
+        "scriptId": "your_projects_script_id",                      // change this
+        "rootDir": "D:\\your\\clasp\\project\\folder\\location",    // change this
     }
     ```
 
@@ -46,7 +50,7 @@
     - open the apps-script project URL
     - clasp project clone (will autogenerate `.clash.json`)
     ```bash
-    clasp clone "appscript_url" # or clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"
+    clasp clone "appscript_url" # ex: clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"
     ```
 
 ### Code on!
@@ -58,7 +62,8 @@
 
 7. do edits, then push
     ```bash
-    npm push # git push && clasp push
+    npm test    # to activate vitest test framework
+    clasp push  # rewrite the app script in console
     ```
 
 8. after this, your Apps-Script project foldering will adopt using the `./src`
