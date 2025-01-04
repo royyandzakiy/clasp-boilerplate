@@ -1,10 +1,10 @@
-# clasp-boilerplate
+# clasp-spreadsheet-boilerplate
 
 - [clasp-spreadsheet-example - spreadsheet](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit)
 - [clasp-spreadsheet-example - app script](https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit)
 
 ### Motivation
-<TBD\>
+This project is made to ease the start of creating a clasp project
 
 ### How it Works
 <TBD\>
@@ -35,8 +35,9 @@
     clasp login
     ```
 
+
 ### Inject already created Apps-Script project
-5. change `.clasp.json.change_this` filename to `.clasp.json`, fill in `scriptId` from your app scripts script ID `https://script.google.com/u/1/home/projects/<this_is_the_script_id>`
+5. change `.clasp.json.change_this` filename to `.clasp.json`, fill in `scriptId` with your app scripts script ID from the App Script Project URL `https://script.google.com/u/1/home/projects/<this_is_the_script_id>`
     ```json
     {
         "scriptId": "your_projects_script_id",                      // change this
@@ -44,10 +45,9 @@
     }
     ```
 
-#### alternative: Create new Apps-Script project
 5. (alt) create a project in app-script
+    - if not yet, create a project in app-script
     - open `https://script.google.com/home` then create "New Project"
-    - open the apps-script project URL
     - clasp project clone (will autogenerate `.clash.json`)
     ```bash
     clasp clone "appscript_url" # ex: clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"

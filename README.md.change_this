@@ -1,0 +1,48 @@
+# Project Title
+
+### Motivation
+<TBD\>
+
+### How it Works
+<TBD\>
+
+### Pending Bug Fixes 🪲
+<TBD\>
+
+### Future Developments 🌱
+<TBD\>
+
+---
+
+## Getting Started
+1. install npm & git
+2. install clasp
+
+    `npm install -g @google/clasp`
+
+3. clone project
+    ```bash
+    git clone https://github.com/royyandzakiy/<project_name_here>.git
+    cd project_name_here
+    npm install
+    ```
+
+4. clasp login & activate app-script API in settings
+    ```bash
+    clasp login
+    ```
+
+### Code on!
+6. pull files, move files
+    ```bash
+    clasp pull
+    mv *.js ./src
+    ```
+
+7. do edits, then push
+    ```bash
+    npm test    # to activate vitest test framework
+    clasp push  # rewrite the app script in console
+    ```
+
+9. run the code in the Apps-Script console (refresh page!)
