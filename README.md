@@ -49,12 +49,12 @@ Insert an already created Apps-Script project
     }
     ```
 
-5. (alt) create a project in App-Script
+    (alt) create a new project in App-Script
     - if not yet, create a new project in App-Script
     - open `https://script.google.com/home` then create "New Project"
     - autogenerate the `.clash.json` in the root project dir
     ```bash
-    clasp clone "appscript_url" # ex: clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"
+    clasp clone "<appscript_url>" # ex: clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"
     ```
 
 ### App Script files preparation
@@ -74,7 +74,8 @@ Insert an already created Apps-Script project
 
 
 ## Testing
-- (bonus) for all modules developed in app script expected to be tested, you must add the line below
+### Preparing for testing
+- for all modules developed in app script expected to be tested, you must add the line below
     ```javascript
     // src/module_name.js
     // ...
@@ -87,7 +88,6 @@ Insert an already created Apps-Script project
     ```
 
 - for it to then be accessed using
-
     ```javascript
     // test/module_name.test.js
     var gas = require('gas-local')
@@ -103,6 +103,11 @@ Insert an already created Apps-Script project
 
         // ...
     })
+    ```
+
+- to activate testing tools run
+    ```bash
+    npm test # or npm t
     ```
 
 ---
@@ -148,7 +153,7 @@ Insert an already created Apps-Script project
     ```bash
     clasp login
     ```
-- App Script Project Setup ([refer above](#inject-already-created-apps-script-project))
+- App Script Project Setup (refer to above section [#app-script-files-preparation](#app-script-files-preparation))
 
 ### Setup Git
 - setup git repo
