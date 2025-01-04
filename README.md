@@ -19,7 +19,7 @@ This project is made to ease the start of creating a clasp project
 
 ---
 
-## How to Use
+## How to Use ⚙️
 ### General preparation
 1. install `npm` & `git`
 2. install `clasp`
@@ -73,7 +73,7 @@ Insert an already created Apps-Script project
 8. press run ▶️ in the Apps-Script console (don't forget to refresh the page beforehand!)
 
 
-## Testing
+## Testing 🩺
 ### Preparing for testing
 - for all modules developed in app script expected to be tested, you must add the line below
     ```javascript
@@ -112,7 +112,7 @@ Insert an already created Apps-Script project
 
 ---
 
-## How to Recreate this Boilerplate
+## How to Recreate this Boilerplate :baby_chick:
 ### Init Project
 - init empty npm project
     ```bash
@@ -159,15 +159,16 @@ Insert an already created Apps-Script project
 - setup git repo
     ```bash
     git init
-    git remote add origin "github_repository_url"
+    git remote add origin "github_repository_url.git"
     ```
 
 - create .gitignore (copy everything from this [.gitignore](./.gitignore))
 
 ### Testing Suite
-- install vitest
+- install vitest & gas-local to mock apps script libraries
     ```bash
     npm i -D vitest
+    npm i -D gas-local --save
     ```
 
 - modify `package.json`, add `test`
@@ -179,13 +180,8 @@ Insert an already created Apps-Script project
     }
     ```
 
-- install gas-local to mock apps script libraries
-    ```bash
-    npm install gas-local --save
-    ```
-
 - create test suites in `./test`
-    - format the filenames as `Class.test.js`
+    - format the filenames as `/test/module_name.test.js` for `/src/module_name.js`
 
 ---
 
