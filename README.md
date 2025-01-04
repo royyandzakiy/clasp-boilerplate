@@ -128,12 +128,12 @@ This project is made to ease the start of creating a clasp project
     ```
 
 - modify `package.json`, add `test`
-    ```json
+    ```
     {
-    ...
-    "test": "vitest",
-    "push": "git push && clasp push",
-    ...
+        ...
+        "test": "vitest",
+        "push": "git push && clasp push",
+        ...
     }
     ```
 
