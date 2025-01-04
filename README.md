@@ -1,5 +1,6 @@
 # clasp-spreadsheet-boilerplate
 
+Here are the other projects related/utilized to this repository. For ease of explanation, it uses t
 - [clasp-spreadsheet-example - spreadsheet](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit)
 - [clasp-spreadsheet-example - app script](https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit)
 
@@ -7,13 +8,14 @@
 This project is made to ease the start of creating a clasp project
 
 ### How it Works
-<TBD\>
-
-### Pending Bug Fixes 🪲
-<TBD\>
-
-### Future Developments 🌱
-<TBD\>
+- Google App Script
+    - This project utilizes the [app-script]() SDK. read docs for more details
+    - It uses the `@types/google-apps-script` for autocompletion
+- Clasp
+    - This project utilizes [clasp]() to interact with the Google Apps Script environment. read docs for more details
+- Testing
+    - [vitest]() is utilized as the main testing framework. Implement test modules in `test/module_name.test.js`. read docs for more details
+    - This project utilizes [gas-local]() to for test mocking and accessing global functions. The reason is for it to run in the Apps Script Console, we can not implement module.export (as how node.js projects are usually structured). Read the Testing section for how to use gas-local, and read the docs to understand further
 
 ---
 
@@ -54,10 +56,10 @@ This project is made to ease the start of creating a clasp project
     ```
 
 ### Code on!
-6. pull files, move files
+6. pull files, move files (after this, your Apps-Script project foldering will have `./src` in the filenames, don't worry, it doesn't change the behaviour)
     ```bash
     clasp pull
-    mv *.js ./src # after this, your Apps-Script project foldering will have `./src` in the filenames, don't worry, it doesn't change the behaviour
+    mv *.js ./src
     ```
 
 7. do edits, then push to App Script Console
@@ -68,9 +70,9 @@ This project is made to ease the start of creating a clasp project
 
 8. press run ▶️ in the Apps-Script console (don't forget to refresh the page beforehand!)
 
----
 
-9. (bonus) for all modules developed in app script expected to be tested, you must add the line below
+## Testing
+- (bonus) for all modules developed in app script expected to be tested, you must add the line below
     ```javascript
     // src/module_name.js
     // ...
@@ -82,7 +84,7 @@ This project is made to ease the start of creating a clasp project
     }
     ```
 
-    for it to then be accessed using
+- for it to then be accessed using
 
     ```javascript
     // test/module_name.test.js
