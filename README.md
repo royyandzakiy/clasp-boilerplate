@@ -60,7 +60,7 @@ This project is made to ease the start of creating a clasp project
     mv *.js ./src
     ```
 
-7. do edits, then push
+7. do edits, then push to App Script Console
     ```bash
     npm test    # to activate vitest test framework
     clasp push  # rewrite the app script in console
@@ -68,6 +68,34 @@ This project is made to ease the start of creating a clasp project
 
 8. after this, your Apps-Script project foldering will adopt using the `./src`
 9. run the code in the Apps-Script console (refresh page!)
+
+10. (bonus) for all modules developed in app script expected to be tested, you must add the line below
+    ```javascript
+    // Make function available for Apps Script and `gas-local`
+    if (typeof global !== 'undefined') {
+        global.module_name_1 = module_name_1;
+        global.module_name_2 = module_name_2;
+    }
+    ```
+
+    for it to then be accessed using
+
+    ```javascript
+    // test/module_name_1.test.js
+    var gas = require('gas-local')
+    var glib = gas.require('./src');
+
+    // ...
+
+    describe('module_name_1', () => {
+        it.todo('should return a string in the correct format', () => {
+            glib.module_name_1();
+            expect(true).toBe(true);
+        });
+
+        // ...
+    })
+    ```
 
 ---
 
@@ -132,7 +160,6 @@ This project is made to ease the start of creating a clasp project
     {
         ...
         "test": "vitest",
-        "push": "git push && clasp push",
         ...
     }
     ```
