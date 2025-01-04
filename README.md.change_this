@@ -22,7 +22,7 @@
 
 3. clone project
     ```bash
-    git clone https://github.com/royyandzakiy/<project_name_here>.git
+    git clone <git_repository_url_here>.git
     cd project_name_here
     npm install
     ```

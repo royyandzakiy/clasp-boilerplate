@@ -20,6 +20,7 @@ This project is made to ease the start of creating a clasp project
 ---
 
 ## How to Use
+### General preparation
 1. install `npm` & `git`
 2. install `clasp`
 
@@ -32,12 +33,14 @@ This project is made to ease the start of creating a clasp project
     npm install
     ```
 
+### App Script Project preparation
+Insert an already created Apps-Script project
+
 4. clasp login & activate App-Script API in settings ([details](https://developers.google.com/apps-script/api/how-tos/enable))
     ```bash
     clasp login
     ```
 
-### Insert an already created Apps-Script project
 5. change `.clasp.json.change_this` filename to `.clasp.json`, fill in `scriptId` with your app scripts script ID from the App Script Project URL `https://script.google.com/u/1/home/projects/<this_is_the_script_id>`
     ```json
     {
@@ -54,7 +57,7 @@ This project is made to ease the start of creating a clasp project
     clasp clone "appscript_url" # ex: clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"
     ```
 
-### Code on!
+### App Script files preparation
 6. pull files, move files (after this, your Apps-Script project foldering will have `./src` in the filenames, don't worry, it doesn't change the behaviour)
     ```bash
     clasp pull
@@ -130,10 +133,6 @@ This project is made to ease the start of creating a clasp project
         ```
 
 ### App Script Project
-- create a project in app-script
-    - open `https://script.google.com/home` then create "New Project"
-    - open the project > Project Settings > copy script ID
-
 - add google app-script autocomplete
     ```bash
     npm i -S @types/google-apps-script
@@ -144,6 +143,12 @@ This project is made to ease the start of creating a clasp project
 - (refer to "alternative: Create new Apps-Script project")
 
 - create `.claspignore` (copy everything from this [.claspignore](./.claspignore))
+
+- clasp login & activate App-Script API in settings ([details](https://developers.google.com/apps-script/api/how-tos/enable))
+    ```bash
+    clasp login
+    ```
+- App Script Project Setup ([refer above](#inject-already-created-apps-script-project))
 
 ### Setup Git
 - setup git repo
