@@ -48,8 +48,7 @@ Insert an already created Apps-Script project
     }
     ```
 
-    (alt) create a new project in App-Script
-    - if not yet, create a new project in App-Script
+    (alt) if not yet created, create a new project in App-Script
     - open `https://script.google.com/home` then create "New Project"
     - autogenerate the `.clash.json` in the root project dir
     ```bash
