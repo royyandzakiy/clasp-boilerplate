@@ -9,13 +9,12 @@ This project is made to ease the start of creating a clasp project
 
 ### How it Works
 - Google App Script
-    - This project utilizes the [`app-script`](https://developers.google.com/apps-script/reference/) SDK. read docs for more details
-    - It uses the [`@types/google-apps-script`](https://www.npmjs.com/package/@types/google-apps-script) for autocompletion. read docs for more details
+    - [`app-script`](https://developers.google.com/apps-script/reference/) SDK used as main library for development
+    - [`@types/google-apps-script`](https://www.npmjs.com/package/@types/google-apps-script) used for autocompletion
 - Clasp
-    - This project utilizes [`clasp`](https://github.com/google/clasp) to interact with the Google Apps Script environment. read docs for more details
-- Testing
-    - [`vitest`](https://vitest.dev/guide/) is utilized as the main testing framework. Implement test modules in `test/module_name.test.js`. read docs for more details
-    - This project utilizes [`gas-local`](https://www.npmjs.com/package/gas-local) to for test mocking and accessing global functions. The reason is for it to run in the Apps Script Console, we can not implement `module.export` (as how `node.js` projects are usually structured). Read the [`Testing` section below](#testing) for how to use `gas-local`, and read the docs to understand further
+    - [`clasp`](https://github.com/google/clasp) used to interact with the Google Apps Script environment
+    - [`vitest`](https://vitest.dev/guide/) used as the main testing framework. Implement test modules in `test/module_name.test.js`
+    - [`gas-local`](https://www.npmjs.com/package/gas-local) used for Google Apps Script test mocking and, and for accessing global functions. Read the [`Testing` section below](#testing) for how to use `gas-local`
 
 ---
 
@@ -76,6 +75,7 @@ Insert an already created Apps-Script project
 
 ## Testing 🩺
 ### Preparing for testing
+- The reason the need of `gas-local` used, is we cannot implement `module.export` in the `app-script` SDK (as how `node.js` projects are more usually structured)
 - all modules developed in app script expected to be tested, needs to add the lines below
     ```javascript
     // src/module_name.js
