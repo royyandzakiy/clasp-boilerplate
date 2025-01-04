@@ -5,16 +5,16 @@ Here are the other files related and utilized in this project
 - [app script example](https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit)
 
 ### Motivation
-This project is made to ease the start of creating a clasp project
+This repository can be used for an easy start of creating a clasp project, meant for externally developing Google Apps Script projects
 
-### How it Works
-- Google App Script
+### Dependencies
+- Development
     - [`app-script`](https://developers.google.com/apps-script/reference/) SDK used as main library for development
     - [`@types/google-apps-script`](https://www.npmjs.com/package/@types/google-apps-script) used for autocompletion
-- Clasp
+    - [`gas-local`](https://www.npmjs.com/package/gas-local) used for Google Apps Script test mocking and, and for accessing global functions. Read the [`Testing` section below](#testing-) for how to use `gas-local`
+- Toolings
     - [`clasp`](https://github.com/google/clasp) used to interact with the Google Apps Script environment
     - [`vitest`](https://vitest.dev/guide/) used as the main testing framework. Implement test modules in `test/module_name.test.js`
-    - [`gas-local`](https://www.npmjs.com/package/gas-local) used for Google Apps Script test mocking and, and for accessing global functions. Read the [`Testing` section below](#testing-) for how to use `gas-local`
 
 ---
 
@@ -53,7 +53,7 @@ Insert an already created Apps-Script project
     - open `https://script.google.com/home` then create "New Project"
     - autogenerate the `.clash.json` in the root project dir
     ```bash
-    clasp clone "<appscript_url>" # ex: clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"
+    clasp clone "<appscript_url>"   # ex: clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"
     ```
 
 ### App Script files preparation
@@ -108,7 +108,7 @@ Insert an already created Apps-Script project
 
 - to activate testing tools run
     ```bash
-    npm test # or npm t
+    npm run test    # or npm t
     ```
 
 ---
@@ -168,8 +168,8 @@ Insert an already created Apps-Script project
 ### Testing Suite
 - install vitest & gas-local to mock apps script libraries
     ```bash
-    npm i -D vitest
-    npm i -D gas-local --save
+    npm install vitest --save-dev       # or npm i -D vitest
+    npm install gas-local --save-dev    # or npm i -D gas-local 
     ```
 
 - modify `package.json`, add `test`
