@@ -1,44 +1,43 @@
-# clasp-spreadsheet-boilerplate
+# clasp-boilerplate
 
 Here are the other projects related/utilized to this repository. For ease of explanation, it uses t
-- [clasp-spreadsheet-example - spreadsheet](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit)
-- [clasp-spreadsheet-example - app script](https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit)
+- [spreadsheet example](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit)
+- [app script example](https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit)
 
 ### Motivation
 This project is made to ease the start of creating a clasp project
 
 ### How it Works
 - Google App Script
-    - This project utilizes the [app-script]() SDK. read docs for more details
-    - It uses the `@types/google-apps-script` for autocompletion
+    - This project utilizes the [`app-script`](https://developers.google.com/apps-script/reference/) SDK. read docs for more details
+    - It uses the [`@types/google-apps-script`](https://www.npmjs.com/package/@types/google-apps-script) for autocompletion. read docs for more details
 - Clasp
-    - This project utilizes [clasp]() to interact with the Google Apps Script environment. read docs for more details
+    - This project utilizes [`clasp`](https://github.com/google/clasp) to interact with the Google Apps Script environment. read docs for more details
 - Testing
-    - [vitest]() is utilized as the main testing framework. Implement test modules in `test/module_name.test.js`. read docs for more details
-    - This project utilizes [gas-local]() to for test mocking and accessing global functions. The reason is for it to run in the Apps Script Console, we can not implement module.export (as how node.js projects are usually structured). Read the Testing section for how to use gas-local, and read the docs to understand further
+    - [`vitest`](https://vitest.dev/guide/) is utilized as the main testing framework. Implement test modules in `test/module_name.test.js`. read docs for more details
+    - This project utilizes [`gas-local`](https://www.npmjs.com/package/gas-local) to for test mocking and accessing global functions. The reason is for it to run in the Apps Script Console, we can not implement module.export (as how node.js projects are usually structured). Read the [`Testing` section below](#testing) for how to use gas-local, and read the docs to understand further
 
 ---
 
 ## How to Use
-1. install npm & git
-2. install clasp
+1. install `npm` & `git`
+2. install `clasp`
 
     `npm install -g @google/clasp`
 
 3. git clone, cd
     ```bash
-    git clone https://github.com/royyandzakiy/clasp-spreadsheet-boilerplate.git
-    cd clasp-spreadsheet-boilerplate
+    git clone https://github.com/royyandzakiy/clasp-boilerplate.git
+    cd clasp-boilerplate
     npm install
     ```
 
-4. clasp login & activate app-script API in settings
+4. clasp login & activate App-Script API in settings ([details](https://developers.google.com/apps-script/api/how-tos/enable))
     ```bash
     clasp login
     ```
 
-
-### Inject already created Apps-Script project
+### Insert an already created Apps-Script project
 5. change `.clasp.json.change_this` filename to `.clasp.json`, fill in `scriptId` with your app scripts script ID from the App Script Project URL `https://script.google.com/u/1/home/projects/<this_is_the_script_id>`
     ```json
     {
@@ -47,10 +46,10 @@ This project is made to ease the start of creating a clasp project
     }
     ```
 
-5. (alt) create a project in app-script
-    - if not yet, create a project in app-script
+5. (alt) create a project in App-Script
+    - if not yet, create a new project in App-Script
     - open `https://script.google.com/home` then create "New Project"
-    - clasp project clone (will autogenerate `.clash.json`)
+    - autogenerate the `.clash.json` in the root project dir
     ```bash
     clasp clone "appscript_url" # ex: clasp clone "https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit"
     ```
@@ -62,7 +61,7 @@ This project is made to ease the start of creating a clasp project
     mv *.js ./src
     ```
 
-7. do edits, then push to App Script Console
+7. do edits, then push to App-Script console
     ```bash
     npm test    # to activate vitest test framework
     clasp push  # rewrite the app script in console
