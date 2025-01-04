@@ -128,12 +128,13 @@ This project is made to ease the start of creating a clasp project
     ```
 
 - modify `package.json`, add `test`
-    ```bash
-    // package.json
+    ```json
+    {
     ...
     "test": "vitest",
     "push": "git push && clasp push",
     ...
+    }
     ```
 
 - install gas-local to mock apps script libraries
