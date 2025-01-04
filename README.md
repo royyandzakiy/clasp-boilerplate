@@ -1,6 +1,6 @@
 # clasp-boilerplate
 
-Here are the other projects related/utilized to this repository. For ease of explanation, it uses t
+Here are the other files related and utilized in this project
 - [spreadsheet example](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit)
 - [app script example](https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit)
 
@@ -14,7 +14,7 @@ This project is made to ease the start of creating a clasp project
 - Clasp
     - [`clasp`](https://github.com/google/clasp) used to interact with the Google Apps Script environment
     - [`vitest`](https://vitest.dev/guide/) used as the main testing framework. Implement test modules in `test/module_name.test.js`
-    - [`gas-local`](https://www.npmjs.com/package/gas-local) used for Google Apps Script test mocking and, and for accessing global functions. Read the [`Testing` section below](#testing) for how to use `gas-local`
+    - [`gas-local`](https://www.npmjs.com/package/gas-local) used for Google Apps Script test mocking and, and for accessing global functions. Read the [`Testing` section below](#testing-) for how to use `gas-local`
 
 ---
 
