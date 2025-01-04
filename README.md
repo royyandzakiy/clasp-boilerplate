@@ -57,7 +57,7 @@ This project is made to ease the start of creating a clasp project
 6. pull files, move files
     ```bash
     clasp pull
-    mv *.js ./src
+    mv *.js ./src # after this, your Apps-Script project foldering will have `./src` in the filenames, don't worry, it doesn't change the behaviour
     ```
 
 7. do edits, then push to App Script Console
@@ -66,12 +66,11 @@ This project is made to ease the start of creating a clasp project
     clasp push  # rewrite the app script in console
     ```
 
-8. after this, your Apps-Script project foldering will have `./src` in the filenames, don't worry, it doesn't change any behaviour
-9. press run in the Apps-Script console (refresh page!)
+8. press run ▶️ in the Apps-Script console (don't forget to refresh the page beforehand!)
 
 ---
 
-10. (bonus) for all modules developed in app script expected to be tested, you must add the line below
+9. (bonus) for all modules developed in app script expected to be tested, you must add the line below
     ```javascript
     // src/module_name.js
     // ...
