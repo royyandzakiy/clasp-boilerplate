@@ -15,7 +15,7 @@ This project is made to ease the start of creating a clasp project
     - This project utilizes [`clasp`](https://github.com/google/clasp) to interact with the Google Apps Script environment. read docs for more details
 - Testing
     - [`vitest`](https://vitest.dev/guide/) is utilized as the main testing framework. Implement test modules in `test/module_name.test.js`. read docs for more details
-    - This project utilizes [`gas-local`](https://www.npmjs.com/package/gas-local) to for test mocking and accessing global functions. The reason is for it to run in the Apps Script Console, we can not implement module.export (as how node.js projects are usually structured). Read the [`Testing` section below](#testing) for how to use gas-local, and read the docs to understand further
+    - This project utilizes [`gas-local`](https://www.npmjs.com/package/gas-local) to for test mocking and accessing global functions. The reason is for it to run in the Apps Script Console, we can not implement `module.export` (as how `node.js` projects are usually structured). Read the [`Testing` section below](#testing) for how to use `gas-local`, and read the docs to understand further
 
 ---
 
@@ -72,10 +72,11 @@ Insert an already created Apps-Script project
 
 8. press run ▶️ in the Apps-Script console (don't forget to refresh the page beforehand!)
 
+---
 
 ## Testing 🩺
 ### Preparing for testing
-- for all modules developed in app script expected to be tested, you must add the line below
+- all modules developed in app script expected to be tested, needs to add the lines below
     ```javascript
     // src/module_name.js
     // ...
@@ -87,7 +88,7 @@ Insert an already created Apps-Script project
     }
     ```
 
-- for it to then be accessed using
+- testing modules need these lines to be implemented
     ```javascript
     // test/module_name.test.js
     var gas = require('gas-local')
