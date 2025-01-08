@@ -1,11 +1,13 @@
 # clasp-boilerplate
 
-Here are the other files related and utilized in this project
-- [spreadsheet example](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit)
-- [app script example](https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit)
+Develop Apps Script projects based using clasp with this boilerplate, get up to spead in no time!
 
 ### Motivation
 This repository can be used for an easy start of creating a clasp project, meant for externally developing Google Apps Script projects
+
+Here are the other files related and utilized in this project
+- [spreadsheet example](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit)
+- [app script example](https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit)
 
 ### Dependencies
 - Development
