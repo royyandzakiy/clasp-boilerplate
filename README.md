@@ -19,11 +19,11 @@ This repository can be used for an easy start of creating a clasp project, meant
 ---
 
 ## Running Current Example ▶️
-- clone project
+- clone this repo
 - change `.clasp.json.change_this` to `.clasp.json`, change `rootDir` to the current folder of this project in computer
 - Open [Apps Script Project](https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit)
-- Hit run ▶️
-- checkout the produced [Spreadsheet Example](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit)
+    - Hit `▶️ Run`
+- checkout the generated [Spreadsheet Example](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit)
 
 ## How to Use ⚙️
 ### General preparation
