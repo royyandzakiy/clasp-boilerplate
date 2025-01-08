@@ -1,12 +1,11 @@
-function getDataFromDataSource(projectKey) {
-  const apiUrl = `https://company.atlassian.net/rest/api/2/issue/${projectKey}`; // this example uses atlassian.net, but it could be anything
-  
+function getDataFromDataSource() {
+  const apiUrl = 'https://official-joke-api.appspot.com/random_joke';
+
+  // Set up the options for the request
   const options = {
-    method: "GET",
-    headers: {
-      "Authorization": `Basic ${Utilities.base64Encode("username@company_email.com:api_access_token")}`,
-      "Accept": "application/json"
-    }
+    method: 'get', // HTTP GET request
+    muteHttpExceptions: true, // Prevent errors from throwing exceptions
+    headers: {} // No authorization headers needed
   };
 
   const response = UrlFetchApp.fetch(apiUrl, options);
@@ -14,20 +13,22 @@ function getDataFromDataSource(projectKey) {
   return response.getContentText();
 }
 
-function formatData(dataRaw) {
-  const data = JSON.parse(dataRaw);
+function jokeStatement(dataString) {
+  const data = JSON.parse(dataString);
     
   // Map response to desired JSON structure
-  const formattedData = {
-    projectKey: data.key,
-    projectSummary: data.fields.summary,
-  };
+  const joke = `${data.setup} ${data.punchline}`;
 
-  return formattedData;
+  return joke;
+}
+
+function printJoke() {
+  return jokeStatement(getDataFromDataSource());
 }
 
 // Make function available for Apps Script and `gas-local`
 if (typeof global !== 'undefined') {
   global.getDataFromDataSource = getDataFromDataSource;
-  global.formatData = formatData;
+  global.jokeStatement = jokeStatement;
+  global.printJoke = printJoke;
 }
