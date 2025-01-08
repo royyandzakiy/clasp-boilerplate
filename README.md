@@ -32,9 +32,9 @@ This repository can be used for an easy start of creating a clasp project, meant
     clasp login
     clasp push
     ```
-- Open [Apps Script Project](https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit)
+- Open [the current Apps Script Project](https://script.google.com/home/projects/1FghjX0N_4darjheBl-3ZlOVi-MXS4yJWHVKit_3hMPnUD42zI2taKUG_/edit)
     - Hit `▶️ Run`
-- checkout the generated [Spreadsheet Example](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit)
+- checkout [the generated Spreadsheet Example](https://docs.google.com/spreadsheets/d/1GrbSH2AoUBIbndqOf6yB3LvCTnx49-3tWq242SZxwdI/edit)
 
 ## How to Use ⚙️
 ### General preparation
